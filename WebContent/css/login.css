@@ -1,0 +1,62 @@
+body{
+
+	background-color: #d7f3ec;
+}
+
+.display_none{
+	display:none;
+}
+
+.login_panel{
+	margin:auto;
+	margin-top:100px;
+	width: 500px;
+	height: 300px;
+	
+	
+}
+
+.ui.dividing.header{
+	color: #989a98;
+	
+}
+
+.ui.corner.labeled.input{
+	width: 300px;
+	
+	
+}
+.accountPanel{
+	margin-top: 30px;
+	height: 71px;
+}
+.passwordPanel{
+	height: 71px;
+}
+.ui.primary.button{
+		margin-top:10px;
+	margin-left: 65px;
+	width: 150px;
+	
+}
+.ui.primary.loading.button{
+	margin-top:10px;
+	margin-left: 65px;
+	width: 150px;
+	display: none;
+}
+
+.input_panel{
+	
+	line-height:3;
+	text-align: center;
+	
+}
+.ui.pointing.label{
+	display:block;
+	width: 150px;
+	margin-left: 65px;
+	margin-top: 3px;
+	background-color: red;
+	display:none;
+}
