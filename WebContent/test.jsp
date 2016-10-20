@@ -12,14 +12,7 @@
 
 <div id="ex">
 	<my-component></my-component>
-	<my-component></my-component>
-	<my-component></my-component>
-	<my-component></my-component>
-	<my-component></my-component>
-	<my-component></my-component>
-	<my-component></my-component>
-	<my-component></my-component>
-	<my-component></my-component>
+	
 </div>
 </body>
 </html>
