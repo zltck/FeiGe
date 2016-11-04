@@ -1,0 +1,57 @@
+
+<div class="app_panel_page">
+	<div class="ui segment" id="panel">
+		<div class="left_panel">
+			<div class="header">
+				<div class="head_icon_panel">
+					<img alt="头像加载失败!" src="images/testicon.png">
+				</div>
+				<div class="userinfo_panel">
+					<h3 class="userinfo">
+						<span class="username">{{username}}</span>
+						<dropdown_comp></dropdown_comp>
+					</h3>
+
+				</div>
+			</div>
+			<div class="contact_searchbar">
+				<div class="ui search">
+					<div class="ui icon input">
+						<input class="prompt" type="text" placeholder="搜索联系人"> <i
+							class="search icon"></i>
+					</div>
+					<div class="results"></div>
+				</div>
+			</div>
+			<div class="bottom_panel">
+				<div class="tab_head_panel">
+					<div class="tab_item_panel">
+						<a class="tab_item" v-on:click="tabItemClick('recent')"><img :src="recent_icon"></a>
+					</div>
+					<div class="tab_item_panel">
+						<a class="tab_item" v-on:click="tabItemClick('wenzhang')"><img :src="wenzhang_icon"></a>
+					</div>
+					<div class="tab_item_panel">
+						<a class="tab_item" v-on:click="tabItemClick('contact')"><img :src="contact_icon"></a>
+					</div>
+				</div>
+				<div v-bind:class="{'tab_card_show':tabShowRecent,'tab_card_hide':tabHideRecent}">
+					<friend_list></friend_list>
+				</div>
+				<div v-bind:class="{'tab_card_show':tabShowWenzhang,'tab_card_hide':tabHideWenzhang}">
+					文章
+				</div>
+				<div v-bind:class="{'tab_card_show':tabShowContact,'tab_card_hide':tabHideContact}">
+					好友列表
+				</div>
+				
+				
+			</div>
+		</div>
+		<div class="chatArea">
+			<!-- <userinfo_comp></userinfo_comp> -->
+			<!-- <logo_comp></logo_comp> -->
+			<component :is="rightCurrContent"></component>
+		</div>
+	</div>
+</div>

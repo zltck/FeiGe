@@ -1,0 +1,29 @@
+.logo_comp_panel{
+	width: 100%;
+	height: 100%;
+}
+.logo_comp_panel .header_panel{
+	width: 682px;
+    height: 50px;
+    border-bottom: 1px solid #d6d6d6;
+    margin: 0 19px;
+    padding: 10px 0;
+    text-align: center;
+    line-height: 40px;
+}
+.logo_comp_panel .logo_body{
+	text-align: center;
+	height: 478px;
+	width: 720px;
+	padding-top:100px;
+}
+.logo_comp_panel .logo_body img{
+	
+	width: 200px;
+	height: 130px;
+}
+.logo_comp_panel .label{
+	font-size: 12px;
+    color: #888;
+    margin-right: 10px;
+}

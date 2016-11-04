@@ -1,0 +1,20 @@
+<div class="friends_list_panel">
+	<div class="friend_list">
+		<div class="friend_list_item" v-bind:class="{'friend_list_item_selected':itemSelected==$index}" v-for="friend in friends" v-on:click="itemClick(this)">
+			<div class="item_content">
+			<div class="time">
+					<p class="time">15:19</p>
+				</div>
+				<div class="item_icon">
+					<img alt="" src="images/testicon.png">
+				</div>
+				<div class="item_info">
+					<h3>username</h3>
+					<p>halou</p>
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>

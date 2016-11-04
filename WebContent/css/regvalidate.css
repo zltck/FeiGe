@@ -1,0 +1,11 @@
+.register_validate_panel .ui.card{
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 550px;
+	background: #ffffff;
+}
+.register_validate_panel .ui.card img{
+	width: 100px;
+	height: 100px;
+	
+}

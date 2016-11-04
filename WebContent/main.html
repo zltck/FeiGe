@@ -1,0 +1,62 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="grey" />
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv="Cache-Control"
+	content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<title>飞鸽</title>
+
+<script type="text/javascript" src="vue/vue.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+<script src="semantic/semantic.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<link rel="stylesheet" type="text/css" href="css/register.css">
+<link rel="stylesheet" type="text/css" href="css/regvalidate.css">
+<link rel="stylesheet" type="text/css" href="css/app_panel_page.css">
+<link rel="stylesheet" type="text/css" href="css/friendlist_comp.css">
+<link rel="stylesheet" type="text/css" href="css/userinfo_panel.css">
+<link rel="stylesheet" type="text/css" href="css/logo_comp.css">
+<script type="text/javascript" src="js/util/LoadResource.js"></script>
+<script type="text/javascript" src="js/util/Ajaxs.js"></script>
+<script type="text/javascript"
+	src="components/loading_comp/loading_comp.js"></script>
+	<script type="text/javascript"
+	src="components/dropdown_comp/dropdown_comp.js"></script>
+<script type="text/javascript"
+	src="components/app_panel_page/app_panel_page.js"></script>
+	<script type="text/javascript"
+	src="components/app_panel_page/app_panel_page.js"></script>
+		<script type="text/javascript"
+	src="components/login_comp/Login.js"></script>
+	<script type="text/javascript"
+	src="components/userinfo_comp/userinfo_comp.js"></script>
+	<script type="text/javascript"
+	src="components/logo_comp/logo_comp.js"></script>
+<script type="text/javascript" src="components/friendlist_comp/friendlist_comp.js"></script>
+<script type="text/javascript"
+	src="components/register_comp/Register.js"></script>
+<script type="text/javascript" src="components/modal_comp/modal_comp.js"></script>
+<script type="text/javascript"
+	src="components/registerValidate_comp/registerValidate_comp.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body>
+	<!-- 遮罩层组件 -->
+	<active_inverted_dimmer v-ref:dimmer></active_inverted_dimmer>
+	<!-- 弹出层组件 -->
+	<modal_comp v-ref:modal></modal_comp>
+	<!-- content组件 -->
+	<div id="content">
+		<component :is="currContent"> </component>
+	</div>
+
+</body>
+</html>
