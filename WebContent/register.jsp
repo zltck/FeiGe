@@ -6,22 +6,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/vue.js"></script>
-<script type="text/javascript" src="js/test.js"></script>
-<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
-<link rel="stylesheet" type="text/css" href="css/login.css">
-<script src="js/semantic.min.js"></script>
 
-<script type="text/javascript" src="js/components/Ajaxs.js"></script>
-<title>Insert title here</title>
+<script type="text/javascript" src="js/util/Ajaxs.js"></script>
+<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+<script src="js/semantic.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/register.css">
+<script type="text/javascript" src="js/register.js"></script>
+<script type="text/javascript" src="js/util/LoadResource.js"></script>
+<script type="text/javascript" src="components/register_comp/Register.js"></script>
+<title>【飞鸽】用户注册</title>
 </head>
 <body>
-
-<div id="root">
-	<login_page>
-	
+	<div class="regist_panel" id="register_panel">
+		<register_page></register_page>
 		
-		
-	</login_page>
-</div>
+	</div>
 </body>
 </html>
+
+

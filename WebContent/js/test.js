@@ -1,12 +1,20 @@
-window.onload=function(){
-	var MyComPonent=Vue.extend({
-		template:'<div>sssssssss</div>'
+$(document).ready(function(){
+
+	
+	
+	Vue.component("login_page",{
+		data:function(){
+			return {error:"错误"}
+		},
+		template:"<a href='baidu.com'>baidu</a>{{error}}"
 	});
 	
-	Vue.component('my-component',MyComPonent);
+	
 	new Vue({
-		el:'#ex'
+		el:"#root"
+		
 	});
 	
 	
-}
+});
+

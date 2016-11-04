@@ -1,0 +1,28 @@
+<h2 class="ui dividing header">Login</h2>					
+			<form class="ui form">
+			<div class="accountPanel">
+				<div class="input_panel">
+				<input id="account" v-model="loginForm.account" type="text" id="account" class="ui corner labeled input" placeholder="账号">
+					<a href="getAccountByEmail.jsp">忘记账号？</a>
+				</div>
+					<div class="ui pointing label" v-bind:style="{display:errorIsShow.accountDisplay}">
+     				{{error.errorMsg_account}}
+    				</div>
+			
+			</div>
+			<div class="passwordPanel">
+				<div class="input_panel">
+				
+				<input v-model="loginForm.password" type="password" id="password" class="ui corner labeled input" placeholder="密码">
+				
+				<a href="getPasswordByEmail.jsp">忘记密码？</a>
+				</div>
+					<div class="ui pointing label" v-bind:style="{display:errorIsShow.paswordDisplay}">
+     				 {{error.errorMsg_password}}
+    			</div>
+			
+			</div>
+				<input v-on:click="loginbtnClick" v-bind:style="{display:btnIsShow.loginBtnDisplay}" type="button" class="ui primary button" value="登录">
+  				<button v-bind:style="{display:btnIsShow.loadingBtnDisplay}" class="ui primary loading button" disabled="disabled">Loading</button>	
+			
+			</form>

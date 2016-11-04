@@ -1,0 +1,53 @@
+body{
+	background-color: #d7f3ec;
+}
+
+.regist_panel{
+	width: 700px;
+	margin: 0px auto;
+	margin-top: 50px;
+	
+}
+
+.ui.form.segment input
+{
+	width: 400px;
+	margin-top: 20px;
+	
+	
+}
+.ui.left.pointing.red.basic.label{
+	margin-top: 25px;
+	
+	
+	
+}
+.ui.left.pointing.red.basic.label.none{
+	margin-top: 25px;
+	display:none;
+	
+}
+.ui.pointing.red.basic.label.none{
+	display:none;
+	
+}
+
+.verification_code_panel{
+	width: 400px;
+	display: flex;
+	
+	
+	
+}
+.ui.primary.button{
+	margin-left: 15px;
+	background-color: #03f4bc;
+}
+.ui.styled.accordion{
+	
+	margin-top: 10px;
+}
+.ui.toggle.checkbox{
+	margin-top: 15px
+}
+

@@ -1,0 +1,42 @@
+<h2 class="ui dividing header">飞鸽       账号注册</h2>
+		<form class="ui form segment">
+			
+			<input id="form_account"  type="text" name="account" v-model="account.formData" placeholder="账号（6-10位纯数字）"/>
+			<div class="ui left pointing red basic label visibel" v-bind:class="{'visibel':account.isShow,'hidden':account.isHidden}">您的账号格式不正确</div>
+			<input id="form_username" type="text" name="username" v-model="username.formData" placeholder="昵称（社交使用的名字）"/>
+			<div class="ui left pointing red basic label" v-bind:class="{'visibel':username.isShow,'hidden':username.isHidden}">昵称不能为空</div>
+			<input id="form_password" type="password" name="password" v-model="password.formData" placeholder="密码（6-16位,可由数字，字母组成）"/>
+			<div class="ui left pointing red basic label" v-bind:class="{'visibel':password.isShow,'hidden':password.isHidden}">您的密码格式不正确</div>
+			<input id="form_repassword" type="password" name="repassword" v-model="repassword.formData" placeholder="重复密码"/>
+			<div class="ui left pointing red basic label" v-bind:class="{'visibel':repassword.isShow,'hidden':repassword.isHidden}">两次密码输入不一致</div>
+			<input id="email" type="email" name="email" v-model="email.formData" placeholder="邮箱（joe@schmoe.com）"/> 
+			<div class="ui left pointing red basic label" v-bind:class="{'visibel':email.isShow,'hidden':email.isHidden}">请输入格式正确的邮箱账号</div>
+			
+			
+			<div class="ui styled accordion">
+  				<div class="title"><i class="dropdown icon"></i>注册须知 </div>
+  				<div class="content">
+    				<p class="transition hidden">A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
+  				</div>
+ 
+			</div>
+			
+			<div class="ui toggle checkbox">
+        		<input type="checkbox" name="gift" tabindex="0" v-model="agree.formData" class="hidden">
+        		<label>我已阅读注册须知。</label>
+      		</div>
+      		<div class="ui left pointing red basic label" v-bind:class="{'visibel':agree.isShow,'hidden':agree.isHidden}">你必须同意注册须知</div>
+      		<div>
+      			<input type="button" v-on:click="btn_click" class="positive ui button" value="确认注册"/>
+			</div>
+		</form>
+		<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>
