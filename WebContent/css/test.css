@@ -1,0 +1,14 @@
+.ui.top.attached.tabular.menu{
+	width: 280px;
+	height: 39px;
+}
+
+.ui.top.attached.tabular.menu .item{
+	width: 93px;
+	height: 35px;
+}
+
+.ui.bottom.attached.tab.segment{
+	width: 280px;
+	height: 440px;
+}

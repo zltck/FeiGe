@@ -8,13 +8,19 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpServletRequestWrapper;
+
+import org.apache.log4j.Logger;
 
 /**
  * Servlet Filter implementation class SetEncode
- */
+ */	
 @WebFilter("/SetEncode")
 public class SetEncode implements Filter {
 
+	private Logger logger=Logger.getLogger(SetEncode.class);
     /**
      * Default constructor. 
      */
@@ -42,10 +48,16 @@ public class SetEncode implements Filter {
 		// place your code here
 
 		// pass the request along the filter chain
+		System.out.println("拦截到请求Url："+((HttpServletRequest)request).getRequestURL());
+		logger.debug("拦截到请求Url:"+request.getServletContext().getContextPath());
+		HttpServletRequest httpRequest=(HttpServletRequest)request;
+		HttpServletResponse httpResponse=(HttpServletResponse)response;
 		
-		request.setCharacterEncoding(encode);
-		response.setContentType("text/html;charset="+encode);
 		
+		
+		httpRequest.setCharacterEncoding(encode);
+		//httpResponse.setContentType("text/html;charset="+encode);
+		httpResponse.setCharacterEncoding(encode);
 		
 		chain.doFilter(request, response);
 	}

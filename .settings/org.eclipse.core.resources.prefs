@@ -1,3 +1,14 @@
 eclipse.preferences.version=1
+encoding//WebContent/components/app_panel_page/app_panel_page.html=UTF-8
+encoding//WebContent/components/chat_panel/chat_panel.html=UTF-8
+encoding//WebContent/components/dropdown_comp/dropdown_comp.html=UTF-8
+encoding//WebContent/components/friendlist_comp/friendlist_comp.html=UTF-8
+encoding//WebContent/components/loading_comp/loading_comp.html=GBK
 encoding//WebContent/components/login_comp/Login.html=UTF-8
+encoding//WebContent/components/logo_comp/logo_comp.html=UTF-8
+encoding//WebContent/components/modal_comp/modal_comp.html=UTF-8
+encoding//WebContent/components/registerValidate_comp/registerValidate_comp.html=UTF-8
+encoding//WebContent/components/register_comp/Register.html=UTF-8
+encoding//WebContent/components/register_comp/Register.js=UTF-8
+encoding//WebContent/components/userinfo_comp/userinfo_comp.html=UTF-8
 encoding/<project>=UTF-8

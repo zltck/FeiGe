@@ -34,6 +34,20 @@ Vue.component("register_page",{
 			}
 		return data;
 	},
+	ready:function(){
+		//下拉框样式
+		$('.ui.styled.accordion')
+		  .accordion({
+		    selector: {
+		      trigger: '.title .icon'
+		    }
+		  });
+		//滑动按钮样式
+		$('.ui.toggle.checkbox')
+		  .checkbox()
+		;
+		
+	},
 	template:loadHTML("components/register_comp/Register.html"),
 	methods:{
 		btn_click:function(){
@@ -94,10 +108,40 @@ Vue.component("register_page",{
 					email:this.email.formData
 			}
 			var callback=function(data){
+				var success=data.success;
+				var title;
+				var header;
+				var description;
+				var btn_msg;
+				if(success){
+					//注册成功,初始化提示框内容
+						
+					//弹出提示框
+					title="恭喜您，注册成功了，请前往指定邮箱账户进行确认。。。";
+					header="aaa";
+					description="请于三十分钟内进行邮箱验证，过期讲删除注册信息！！";
+					btn_msg="确认";
+					app.$refs.dimmer.hide(false,true);
+					app.$refs.modal.showModal(title,header,description,btn_msg);	
+				}else{
+					title="很遗憾，注册失败了";
+					header="错误信息：";
+					description="1.";
+					btn_msg="确认";
+					console.log("父类组件"+this.$refs);
+					app.$refs.dimmer.hide(false,true);
+					app.$refs.modal.showModal(title,header,description,btn_msg);
+				}
 				
+				console.log(data);
 			}
-			sendRequest("register", "post", formDatas, callback);
+			sendRequest("register", "post","json",true, formDatas, callback);
+			app.$refs.dimmer.show("正在注册...",true,false);
 			
+			
+		},
+		loginBtnClick:function(){
+			app.currContent="login_page";
 		}
 		
 	}

@@ -1,3 +1,4 @@
+<div class="login_panel" id="login_panel">
 <h2 class="ui dividing header">Login</h2>					
 			<form class="ui form">
 			<div class="accountPanel">
@@ -24,5 +25,6 @@
 			</div>
 				<input v-on:click="loginbtnClick" v-bind:style="{display:btnIsShow.loginBtnDisplay}" type="button" class="ui primary button" value="登录">
   				<button v-bind:style="{display:btnIsShow.loadingBtnDisplay}" class="ui primary loading button" disabled="disabled">Loading</button>	
-			
+				<span class="registerBtnClick" v-on:click="registerBtnClick">注册账号</span>
 			</form>
+			</div>

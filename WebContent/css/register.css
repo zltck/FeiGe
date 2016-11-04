@@ -9,45 +9,49 @@ body{
 	
 }
 
-.ui.form.segment input
+.regist_panel .ui.form.segment input
 {
 	width: 400px;
 	margin-top: 20px;
 	
 	
 }
-.ui.left.pointing.red.basic.label{
+.regist_panel .ui.left.pointing.red.basic.label{
 	margin-top: 25px;
 	
 	
 	
 }
-.ui.left.pointing.red.basic.label.none{
+.regist_panel .ui.left.pointing.red.basic.label.none{
 	margin-top: 25px;
 	display:none;
 	
 }
-.ui.pointing.red.basic.label.none{
+.regist_panel .ui.pointing.red.basic.label.none{
 	display:none;
 	
 }
 
-.verification_code_panel{
+.regist_panel .verification_code_panel{
 	width: 400px;
 	display: flex;
 	
 	
 	
 }
-.ui.primary.button{
+.regist_panel .ui.primary.button{
 	margin-left: 15px;
 	background-color: #03f4bc;
 }
-.ui.styled.accordion{
+.regist_panel .ui.styled.accordion{
 	
 	margin-top: 10px;
 }
-.ui.toggle.checkbox{
+.regist_panel .ui.toggle.checkbox{
 	margin-top: 15px
+}
+.regist_panel .loginBtnClick{
+	color: #b9afaf;
+	cursor: pointer;
 }
 
