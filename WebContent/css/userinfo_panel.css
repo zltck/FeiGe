@@ -45,6 +45,10 @@
     color: #888;
     margin-right: 10px;
 }
+.userinfo_comp_panel .label img{
+	
+	margin-bottom: 5px;
+}
 
 .userinfo_comp_panel .ui.primary.button{
 	background: #1678c2;

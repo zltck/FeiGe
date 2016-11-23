@@ -1,0 +1,20 @@
+
+<div class=friend_list_item v-on:click="click" v-bind:class="{'friend_list_item_selected':selected}">
+	<div class="item_content">
+	
+		<div class="time">
+			<p>18:42</p>
+			<div v-bind:class="{'num':is_show,'num_hidden':is_hidden}">{{num}}</div>
+		</div>
+		
+		<div class="item_icon">
+			<img alt="" src="images/testicon.png">
+		</div>
+		<div class="item_info">
+			<h3>系统消息</h3>
+			<p>{{simple_msg}}</p>
+
+		</div>
+
+	</div>
+</div>

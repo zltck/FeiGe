@@ -1,0 +1,33 @@
+.chatpanel_comp_panel{
+	width: 100%;
+	height: 100%;
+}
+.chatpanel_comp_panel .header_panel{
+	width: 682px;
+    height: 50px;
+    border-bottom: 1px solid #d6d6d6;
+    margin: 0 19px;
+    padding: 10px 0;
+    text-align: center;
+    line-height: 40px;
+}
+.chatpanel_comp_panel .chatpanel_body{
+	width: 720px;
+	height: 550px;
+	
+	
+    border: 1px solid red;
+}
+.chatpanel_comp_panel .msg_list_panel{
+	    margin-bottom: 0px;
+    margin-right: 0px;
+    height: 369px;
+    bottom: 180px;
+    padding: 0 19px;
+}
+
+.chatpanel_comp_panel .ft_panel{
+	height: 180px;
+    margin-right: 19px;
+    border-top: 1px solid #d6d6d6;
+}

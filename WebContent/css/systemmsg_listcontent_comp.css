@@ -1,0 +1,123 @@
+.systemmsg_listcontent_panel {
+	width: 100%;
+	height: 100%;
+}
+
+.systemmsg_listcontent_panel .header_panel {
+	width: 682px;
+	height: 50px;
+	border-bottom: 1px solid #d6d6d6;
+	margin: 0 19px;
+	padding: 10px 0;
+	text-align: center;
+	line-height: 40px;
+}
+
+.systemmsg_listcontent_panel .title {
+	color: gray;
+}
+
+.systemmsg_listcontent_panel .logo_body {
+	text-align: center;
+	height: 478px;
+	width: 720px;
+}
+
+.systemmsg_listcontent_panel .item_panel .item {
+	border-bottom: 1px solid rgba(34, 36, 38, .15);
+	height: 100px;
+	width: 580px;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+
+.systemmsg_listcontent_panel .item_panel {
+	width: 600px;
+	margin: 15px auto;
+	height: 500px;
+	background: rgba(255, 255, 255, .5);
+	overflow: -Scroll;
+	overflow-x: hidden;
+}
+
+.systemmsg_listcontent_panel .item_title {
+	text-align: left;
+	padding-top: 5px;
+	font-size: 15px;
+	font-weight: 500;
+	color: #767676;
+	font-style: inherit;
+}
+
+.systemmsg_listcontent_panel .item_msg {
+	text-align: left;
+	margin-left: 30px;
+	font-size: 15px;
+	color: #504d4d;
+	margin-top: 15px;
+}
+
+.systemmsg_listcontent_panel .ui.button {
+	height: 30px;
+	line-height: 0;
+	color: white;
+	float: right;
+}
+
+.systemmsg_listcontent_panel .span_btn {
+	float: right;
+	line-height: 3.5;
+	font-size: 10px;
+	margin-left: 10px;
+	color: rgba(0, 0, 0, .4);
+	cursor: pointer;
+}
+
+.systemmsg_listcontent_panel .friaccount {
+	font-size: 15px;
+	margin-left: 3px;
+	margin-right: 3px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.systemmsg_listcontent_panel .item_panel::-webkit-scrollbar {
+	width: 7px;
+	height: 103px;
+}
+
+.systemmsg_listcontent_panel .item_panel::-webkit-scrollbar-button {
+	display: none;
+}
+
+.systemmsg_listcontent_panel .item_panel::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+.systemmsg_listcontent_panel .item_panel::-webkit-scrollbar-thumb {
+	width: 8px;
+	height: 103px;
+	background: rgba(0, 0, 0, .1);
+	border-radius: 4px;
+}
+
+.systemmsg_listcontent_panel .ui.button.disabled {
+	display: none;
+}
+
+.systemmsg_listcontent_panel .span_btn_disabled {
+	display: none;
+}
+
+.systemmsg_listcontent_panel .tip_show {
+	float: right;
+	line-height: 3.5;
+	font-size: 10px;
+	margin-left: 10px;
+	color: rgba(0, 0, 0, .4);
+	
+}
+
+.systemmsg_listcontent_panel .tip_disabled {
+	display: none;
+}

@@ -4,7 +4,8 @@
 		<div class="left_panel">
 			<div class="header">
 				<div class="head_icon_panel">
-					<img alt="头像加载失败!" src="images/testicon.png">
+					<img v-on:click="changeIcon" alt="头像加载失败!"
+						src="images/testicon.png">
 				</div>
 				<div class="userinfo_panel">
 					<h3 class="userinfo">
@@ -26,32 +27,41 @@
 			<div class="bottom_panel">
 				<div class="tab_head_panel">
 					<div class="tab_item_panel">
-						<a class="tab_item" v-on:click="tabItemClick('recent')"><img :src="recent_icon"></a>
+						<a class="tab_item" v-on:click="tabItemClick('recent')"><img
+							:src="recent_icon"></a>
 					</div>
 					<div class="tab_item_panel">
-						<a class="tab_item" v-on:click="tabItemClick('wenzhang')"><img :src="wenzhang_icon"></a>
+						<a class="tab_item" v-on:click="tabItemClick('wenzhang')"><img
+							:src="wenzhang_icon"></a>
 					</div>
 					<div class="tab_item_panel">
-						<a class="tab_item" v-on:click="tabItemClick('contact')"><img :src="contact_icon"></a>
+						<a class="tab_item" v-on:click="tabItemClick('contact')"><img
+							:src="contact_icon"></a>
 					</div>
 				</div>
-				<div v-bind:class="{'tab_card_show':tabShowRecent,'tab_card_hide':tabHideRecent}">
-					<friend_list></friend_list>
+				<div
+					v-bind:class="{'tab_card_show':tabShowRecent,'tab_card_hide':tabHideRecent}">
+					<friend_list :account="account" @curr_right_content="set_right_panel" v-ref:friend_list_recent></friend_list>
 				</div>
-				<div v-bind:class="{'tab_card_show':tabShowWenzhang,'tab_card_hide':tabHideWenzhang}">
-					文章
+				<div
+					v-bind:class="{'tab_card_show':tabShowWenzhang,'tab_card_hide':tabHideWenzhang}">
+					文章</div>
+				<div
+					v-bind:class="{'tab_card_show':tabShowContact,'tab_card_hide':tabHideContact}">
+					
+					<friend_list :account="account" @curr_right_content="set_right_panel" v-ref:friend_list_all></friend_list>
 				</div>
-				<div v-bind:class="{'tab_card_show':tabShowContact,'tab_card_hide':tabHideContact}">
-					好友列表
+
+				<div class="add_fri_panel" v-on:click="showAddFriPanel">
+					<span>添加好友</span>
 				</div>
-				
-				
 			</div>
 		</div>
 		<div class="chatArea">
 			<!-- <userinfo_comp></userinfo_comp> -->
 			<!-- <logo_comp></logo_comp> -->
-			<component :is="rightCurrContent"></component>
+			<component v-ref:right_panel @curr_right_content="set_right_panel"
+				:is="rightCurrContent" :account="account"></component>
 		</div>
 	</div>
 </div>

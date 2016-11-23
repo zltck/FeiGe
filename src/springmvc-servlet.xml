@@ -41,6 +41,7 @@
 			<list>
 				<value>/com/me/entity/UserInfo.hbm.xml</value>
 				<value>/com/me/entity/Friends.hbm.xml</value>
+				<value>/com/me/entity/SystemMsg.hbm.xml</value>
 			</list>
 		</property>
 
@@ -68,7 +69,10 @@
 	<mvc:annotation-driven />
 	<tx:annotation-driven transaction-manager="transactionManager"/> 
 
-	<context:component-scan base-package="com.me"></context:component-scan>
+		
+	
+	<context:component-scan base-package="com.me.service"></context:component-scan>
+	<context:component-scan base-package="com.me.controllers"></context:component-scan>
 
 
 </beans>

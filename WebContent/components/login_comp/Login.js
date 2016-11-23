@@ -61,8 +61,14 @@ Vue.component("login_page",
 
 						if (data.success == true) {
 							// 登录成功
+						//	setAccount(data.data.account);
 							console.log("------登陆成功------");
+							app.account=data.data.account;
 							app.currContent = "app_panel";
+//							this.$nextTick(function(){
+//								app.$refs.root_panel.account=data.data.account;
+//								app.$refs.root_panel.openSocket(data.data.account);
+//							});
 							return;
 						}
 						if (data.success == false) {

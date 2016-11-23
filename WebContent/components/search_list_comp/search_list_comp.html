@@ -1,0 +1,23 @@
+<div class="search_list_panel" >
+	<div v-bind:class="{'list_item':nodata_show,'list_item_hiden':nodata_hidden}">
+		<span>{{nodata}}</span>
+	</div>
+	<div class="list_item"  v-for="item in items" v-on:click="choice(this)">
+		<div class="icon_panel">
+			<img src="images/testicon.png" alt="图片加载失败"/>
+		</div>
+		<div class="account_panel">
+			<span>{{item.account}}</span>
+		</div>
+		<div class="username_panel">
+			<span>{{item.username}}</span>
+		</div>
+		<div class="sex_panel">
+			<span>{{item.sex}}</span>
+		</div>
+		<div class="position_panel">
+			<span>{{item.province}}</span>
+			<span>{{item.city}}</span>
+		</div>
+	</div>
+</div>

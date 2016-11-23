@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-10-25 19:07:38 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.me.entity.SystemMsg" table="systemmsg">
+        <id name="id" type="int" access="field">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        
+        <property name="reciever" type="java.lang.String" access="field">
+            <column name="reciever" />
+        </property>
+         <property name="sender" type="java.lang.String" access="field">
+            <column name="sender" />
+        </property>
+        <property name="type" type="java.lang.String" access="field">
+            <column name="type" />
+        </property>
+        <property name="msg" type="java.lang.String" access="field">
+            <column name="msg" />
+        </property>
+        <property name="time" type="java.util.Date" access="field">
+            <column name="time" />
+        </property>
+         <property name="isread" type="int" access="field">
+            <column name="isread" />
+        </property>
+       
+    </class>
+</hibernate-mapping>

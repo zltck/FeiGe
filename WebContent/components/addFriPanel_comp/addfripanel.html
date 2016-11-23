@@ -1,0 +1,22 @@
+<div class="addFriPanel">
+	<div class="header_panel">
+
+		<div class="under_line"></div>
+
+	</div>
+	<div class="logo_body">
+		<div class="field">
+			<input type="text" v-on:keyup="keyup" v-model="searchKey" />
+			<button class="ui primary button">查找</button>
+
+		</div>
+		<div class="search_result">
+			<div v-bind:class="{'search_result_title':resultTitleShow,'search_result_title_hidden':resultTitleHidden}">账号相关</div>
+			<search_list_comp @curr_right_content="set_right_panel" v-ref:search_list_account></search_list_comp>
+			<div v-bind:class="{'search_result_title':resultTitleShow,'search_result_title_hidden':resultTitleHidden}">用户名相关</div>
+			<search_list_comp @curr_right_content="set_right_panel" v-ref:search_list_key></search_list_comp>
+		</div>
+	</div>
+
+</div>
+</div>

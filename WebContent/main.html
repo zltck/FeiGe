@@ -11,40 +11,59 @@
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
 <title>飞鸽</title>
-
+<script type="text/javascript"
+	src="http://api.map.baidu.com/api?v=2.0&ak=HzHrpEk4cHXBICufBlaesMmy"></script>
+<link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
 <script type="text/javascript" src="vue/vue.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
-<link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+
 <script src="semantic/semantic.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/login.css">
+<link rel="stylesheet" type="text/css" href="css/addfripanel.css">
 <link rel="stylesheet" type="text/css" href="css/register.css">
 <link rel="stylesheet" type="text/css" href="css/regvalidate.css">
 <link rel="stylesheet" type="text/css" href="css/app_panel_page.css">
 <link rel="stylesheet" type="text/css" href="css/friendlist_comp.css">
 <link rel="stylesheet" type="text/css" href="css/userinfo_panel.css">
 <link rel="stylesheet" type="text/css" href="css/logo_comp.css">
+<link rel="stylesheet" type="text/css" href="css/search_list.css">
+<link rel="stylesheet" type="text/css" href="css/chat_panel.css">
+<link rel="stylesheet" type="text/css" href="css/systemmsg_listcontent_comp.css">
+
 <script type="text/javascript" src="js/util/LoadResource.js"></script>
 <script type="text/javascript" src="js/util/Ajaxs.js"></script>
+<script type="text/javascript" src="js/util/websocket.js"></script>
 <script type="text/javascript"
 	src="components/loading_comp/loading_comp.js"></script>
-	<script type="text/javascript"
+<script type="text/javascript"
 	src="components/dropdown_comp/dropdown_comp.js"></script>
 <script type="text/javascript"
 	src="components/app_panel_page/app_panel_page.js"></script>
+<script type="text/javascript"
+	src="components/addFriPanel_comp/addfripanel.js"></script>
 	<script type="text/javascript"
-	src="components/app_panel_page/app_panel_page.js"></script>
-		<script type="text/javascript"
-	src="components/login_comp/Login.js"></script>
-	<script type="text/javascript"
+	src="components/chat_panel/chat_panel.js"></script>
+<script type="text/javascript"
+	src="components/system_msg_title_comp/system_msg_title_comp.js"></script>
+<script type="text/javascript"
+	src="components/search_list_comp/search_list_comp.js"></script>
+<script type="text/javascript" src="components/login_comp/Login.js"></script>
+<script type="text/javascript"
 	src="components/userinfo_comp/userinfo_comp.js"></script>
-	<script type="text/javascript"
-	src="components/logo_comp/logo_comp.js"></script>
-<script type="text/javascript" src="components/friendlist_comp/friendlist_comp.js"></script>
+<script type="text/javascript" src="components/logo_comp/logo_comp.js"></script>
+<script type="text/javascript"
+	src="components/friendlist_comp/friendlist_comp.js"></script>
 <script type="text/javascript"
 	src="components/register_comp/Register.js"></script>
 <script type="text/javascript" src="components/modal_comp/modal_comp.js"></script>
 <script type="text/javascript"
+	src="components/systemmsg_listcontent_comp/systemmsg_listcontent_comp.js"></script>
+<script type="text/javascript"
 	src="components/registerValidate_comp/registerValidate_comp.js"></script>
+	<script type="text/javascript"
+	src="components/addfi_item_comp/addfi_item_comp.js"></script>
+	<script type="text/javascript"
+	src="components/broadcast_item_comp/broadcast_item_comp.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
 </head>
@@ -55,7 +74,8 @@
 	<modal_comp v-ref:modal></modal_comp>
 	<!-- content组件 -->
 	<div id="content">
-		<component :is="currContent"> </component>
+		<component :account="account" v-ref:root_panel :is="currContent">
+		</component>
 	</div>
 
 </body>

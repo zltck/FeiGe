@@ -1,0 +1,82 @@
+.addFriPanel {
+	width: 100%;
+	height: 100%;
+}
+
+.addFriPanel .header_panel {
+	width: 682px;
+	height: 50px;
+	border-bottom: 1px solid #d6d6d6;
+	margin: 0 19px;
+	padding: 10px 0;
+	text-align: center;
+	line-height: 40px;
+}
+
+.addFriPanel .logo_body {
+	text-align: center;
+	height: 478px;
+	width: 720px;
+	padding-top: 100px;
+}
+
+.addFriPanel .field {
+	display: flex;
+}
+
+.addFriPanel .field input {
+	width: 350px;
+	height: 30px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border: 1px solid #2185d0;
+	position: relative;
+	margin-left: 100px;
+}
+.addFriPanel .ui.primary.button{
+	height: 30px;
+	width:100px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.addFriPanel .search_result{
+	    background: #eeeeee;
+    width: 450px;
+    border: 1px solid #eeeeee;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 5px;
+    overflow-x: hidden;
+}
+
+.search_result::-webkit-scrollbar {
+	width: 7px;
+	height: 103px;
+}
+
+.search_result::-webkit-scrollbar-button {
+	display: none;
+}
+
+.search_result::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+.search_result::-webkit-scrollbar-thumb {
+	width:8px;
+	height:103px;
+	background: #595b60;
+	border-radius: 4px;
+}
+.addFriPanel .search_result_title{
+	background: rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+    text-align: left;
+    padding-left: 10px;
+    font-weight: 600;
+    color: rgba(255,255,255,.9);
+}
+.addFriPanel .search_result_title_hidden{
+	display: none;
+}

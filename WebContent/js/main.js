@@ -17,7 +17,7 @@ $(document).ready(function() {
 		data : {
 			currContent : null,
 			// textMsg : null,
-
+			account:null,
 			modalTitle : null,
 			modalHeader : null,
 			modalDescription : null,
@@ -48,7 +48,12 @@ $(document).ready(function() {
 				this.currContent = "login_page";
 			} else {
 				console.log("已登录");
+				console.log(islogin.data);
+				
 				this.currContent = "app_panel";
+				this.account=islogin.data;
+				
+				
 			}
 
 			

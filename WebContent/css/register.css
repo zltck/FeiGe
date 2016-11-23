@@ -39,6 +39,16 @@ body{
 	
 	
 }
+
+.ui.form .field {
+    clear: both;
+    margin-top: 20px;
+}
+.regist_panel .field{
+	width: 400px;
+	
+}
+
 .regist_panel .ui.primary.button{
 	margin-left: 15px;
 	background-color: #03f4bc;

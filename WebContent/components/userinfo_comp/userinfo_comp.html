@@ -12,13 +12,14 @@
 		</div>
 		<div class="username_panel">
 			<h1>{{username}}</h1>
+			<img alt="图片加载失败" :src="icon_src">
 		</div>
 		<div class="user_info_panel">
-			<div class="label">{{remarks}}</div>
-			<div class="label">{{position}}</div>		
+			
+			<div class="label">位置：{{position}}</div>		
 		</div>
 		<div class="user_btn_panel">
-			<button class="ui primary button">发送消息</button>
+			<button class="ui primary button" v-on:click="click">{{btn_msg}}</button>
 		</div>
 	</div>
 </div>

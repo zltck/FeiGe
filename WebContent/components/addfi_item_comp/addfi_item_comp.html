@@ -1,0 +1,13 @@
+<div class="item">
+	<div class="item_content">
+		<div class="item_title">好友请求:</div>
+		<div class="item_msg">
+			用户<span class="friaccount">{{sender}}</span>请求加您为好友。
+		</div>
+		<div class="item_btn">
+			<span v-on:click="refuse" v-bind:class="{'span_btn_disabled':span_btn_disabled,'span_btn':span_btn_show}">残忍拒绝</span>
+			<button v-on:click="agree" v-bind:class="{'ui button disabled':agree_disabled,'ui button':agree_show}">同意</button>
+			<span v-bind:class="{'tip_show':tip_show,'tip_disabled':tip_disabled}">{{tip}}</span>
+		</div>
+	</div>
+</div>

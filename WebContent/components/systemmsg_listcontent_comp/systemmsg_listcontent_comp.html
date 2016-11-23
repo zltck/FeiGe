@@ -1,0 +1,15 @@
+<div class="systemmsg_listcontent_panel">
+	<div class="header_panel">
+		
+		<div class="under_line">
+			<div class="title">系统消息</div>
+		</div>
+		
+	</div>
+	<div class="logo_body">
+		<div class="item_panel">
+			<component class="item" v-for="item in items" :is="item.item" :sender="resp_data[$index].sender" :account="account" v-ref:system_msg_item ></component>
+			
+		</div>
+	</div>
+</div>
